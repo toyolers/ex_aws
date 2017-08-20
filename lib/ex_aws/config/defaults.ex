@@ -67,6 +67,24 @@ defmodule ExAws.Config.Defaults do
       region: "us-east-1",
       port: 443
     },
+    lex_models: %{
+      scheme: "https://",
+      host: %{
+        "us-east-1" => "models.lex.us-east-1.amazonaws.com"
+      },
+      port: 443,
+      region: "us-east-1",
+      service_override: :lex
+    },
+    lex_runtime: %{
+      scheme: "https://",
+      host: %{
+        "us-east-1" => "runtime.lex.us-east-1.amazonaws.com"
+      },
+      port: 443,
+      region: "us-east-1",
+      service_override: :lex
+    },
     s3: %{
       scheme: "https://",
       host: %{
